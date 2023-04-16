@@ -21,5 +21,10 @@ pipeline{
 					sh 'echo "cross the road..."'
 				}
 			}
+			stage('5-run system analysis'){
+				steps{
+					sh 'lsblk'
+				}
+			}
 		}
 }
