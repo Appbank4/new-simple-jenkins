@@ -26,5 +26,10 @@ pipeline{
 					sh 'lsblk'
 				}
 			}
+			stage('6-pwd-check'){
+				steps{
+					sh 'pwd'
+				}
+			}
 		}
 }
