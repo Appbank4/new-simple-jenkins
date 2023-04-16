@@ -28,7 +28,7 @@ pipeline{
 			}
 			stage('6-pwd-check'){
 				steps{
-					sh 'pwd'
+					sh '"echo My git is successful"'
 				}
 			}
 		}
