@@ -26,9 +26,9 @@ pipeline{
 					sh 'lsblk'
 				}
 			}
-			stage('6-pwd-check'){
+			stage('6-check working directory'){
 				steps{
-					sh '"echo My git is successful"'
+					echo "My git is successful"
 				}
 			}
 		}
